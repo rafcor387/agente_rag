@@ -1,0 +1,27 @@
+# Entorno Virtual
+venv/
+.venv/
+env/
+ENV/
+# Configuración y Secretos
+.env
+*.env.local
+# Base de datos vectorial (Muy pesado para Git)
+chroma_db/
+# Python - Archivos temporales y caché
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+# Documentos (Opcional)
+# Si quieres subir los PDFs al Git, NO pongas esta línea.
+# docs/*.pdf
+# Sistema Operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+# IDEs
+.vscode/
+.idea/
+*.swp

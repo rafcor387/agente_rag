@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conoce Bolivia - Consulta de Información</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>Conoce Bolivia: Aprende de nuestra Historia y Actualidad</h1>
+        <p class="tagline">Explora el conocimiento a través de nuestra base de datos inteligente.</p>
+    </header>
+
+    <main class="main-content">
+        <section class="info-selection">
+            <h2>Selecciona un tema para explorar</h2>
+            <div class="cards-container">
+
+                <div class="card" data-pdf="Tomo-I.pdf">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQekpIeIuikjqYQCx3cc2ngpaL4tCa53q0_Vg&s" alt="La Historia De Bolivia" loading="lazy">
+                    <div class="card-content">
+                        <h3>Bolivia Precolonial</h3>
+                        <p>Una guía sobre las civilizaciones establecidas en la región de lo que hoy es Bolivia, antes de la llegada de los españole.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-pdf="independencia-de-bolivia.pdf">
+                    <img src="https://editorialkipus.com/files/hstoria-de-bolivia.jpg" alt="La Historia De Bolivia" loading="lazy">
+                    <div class="card-content">
+                        <h3>Independencia De Bolivia</h3>
+                        <p>El proceso de Independencia de Bolivia fue largo y complejo, enmarcado en las Guerras de Independencia Hispanoamericanas.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-pdf="Guerra_Bolivia_Paraguay.pdf">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz_idrQDtZMNcNsK5xQMzx2ZVaCo-KsJi4tQLYVTgnRCnRUrTAvwi_JgpQX_ZqZBIADLhEaps40_q7V8C_nTM2Man1a4Yl3YIeUE7mew2H7wfvz8semGelAF8dLYTBxAvV5mdcZq7ooR5X/s1600/19225679_1969828056571637_6407381684335814969_n.jpg" alt="Gerra Del Chaco" loading="lazy">
+                    <div class="card-content">
+                        <h3>Guerra Del Chaco</h3>
+                        <p>Conflicto sangriento entre Bolivia y Paraguay por el control del Chaco Boreal, con especulaciones sobre yacimientos petrolíferos.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-pdf="actualidad.pdf">
+                    <img src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/JG72LJRCKBJIXEXILAUADIAHRY.jpg" alt="Bolivia" loading="lazy">
+                    <div class="card-content">
+                        <h3>Evolución Política</h3>
+                        <p>Bolivia enfrenta nuevos retos y desafíos complejos, que requieren soluciones integrales y consenso para su estabilidad a largo plazo.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="query-section">
+            <h2>Haz tu pregunta sobre el tema seleccionado</h2>
+            <div class="form-container">
+                <form id="preguntaForm">
+                    <label for="query">Escribe aquí tu pregunta:</label>
+                    <textarea id="query" name="query" rows="4" placeholder="Ej: ¿Cuál fue la causa principal de la Guerra del Pacífico?"></textarea>
+                    <button type="submit" id="submitBtn">Enviar Pregunta</button>
+                </form>
+
+                <div class="respuesta" id="respuesta">
+                    <strong>Respuesta:</strong>
+                    <p id="textoRespuesta">La respuesta aparecerá aquí después de tu consulta...</p>
+                    <div class="button-group">
+                        <button id="copyBtn" style="display:none;">Copiar Respuesta</button>
+                        <button id="translateBtn" style="display:none;">Traducir a Español</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Conoce Bolivia. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
